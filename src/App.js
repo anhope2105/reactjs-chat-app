@@ -13,8 +13,8 @@ function App() {
       <AuthProvider>
         <AppProvider>
           <Switch>
-            <Route component={Login} path='/login' />
-            <Route component={ChatRoom} path='/' />
+            <Route path="/login"><Login /></Route>
+            <Route path="/"><ChatRoom /></Route>
           </Switch>
           <AddRoomModal />
           <InviteMemberModal />
